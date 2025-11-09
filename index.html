@@ -100,7 +100,7 @@
     </div>
   </section>
 
-  <!-- About / Sub-brand blurb -->
+  <!-- About -->
   <section id="about" class="py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid gap-8 lg:grid-cols-2 lg:items-center">
       <div>
@@ -140,7 +140,7 @@
     </div>
   </section>
 
-  <!-- Portfolio Grid -->
+  <!-- Portfolio -->
   <section id="portfolio" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between gap-6">
@@ -180,7 +180,7 @@
     </div>
   </section>
 
-  <!-- Reviews / Testimonials carousel -->
+  <!-- Reviews -->
   <section id="reviews" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
@@ -192,7 +192,6 @@
       </div>
       <div class="mt-6 overflow-hidden">
         <div id="carousel" class="flex gap-6 transition-transform duration-500">
-          <!-- Testimonial card -->
           <figure class="shrink-0 basis-full sm:basis-[48%] lg:basis-[31%] rounded-2xl border border-white/10 p-6">
             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="Reviewer" class="h-12 w-12 rounded-full object-cover"/>
             <figcaption class="mt-3 font-medium">Dilthi Fernando</figcaption>
@@ -227,7 +226,7 @@
     </div>
   </section>
 
-  <!-- Insights / Blog teasers -->
+  <!-- Insights -->
   <section id="insights" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Insights & Inputs</h2>
@@ -272,8 +271,9 @@
       <div class="rounded-3xl border border-white/10 p-8">
         <h3 class="text-2xl font-serif" style="font-family:'Playfair Display',serif">Send an Inquiry</h3>
 
-        <!-- FORM WITH FORMSPREE -->
-        <form id="contactForm" class="mt-6 grid gap-4" novalidate>
+        <!-- FORM WITH FORMSPREE (progressive enhancement: action/method + JS fetch) -->
+        <form id="contactForm" class="mt-6 grid gap-4" novalidate
+              action="https://formspree.io/f/mpwkaoze" method="POST">
           <!-- Formspree helpers -->
           <input type="hidden" name="_subject" value="New Inquiry — Between Us" />
           <input type="hidden" name="_template" value="table" />
@@ -400,7 +400,7 @@
     // === Contact form (Formspree) ===
     const form = document.getElementById('contactForm');
     const formMsg = document.getElementById('formMsg');
-    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // <-- replace with your real ID
+    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mpwkaoze'; // your endpoint
 
     form?.addEventListener('submit', async (e)=>{
       e.preventDefault();
