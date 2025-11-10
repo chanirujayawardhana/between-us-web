@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Between Us</title>
   <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
-  <meta name="description" content="Between Us — Wedding, lifestyle & engagement photography and videography. Timeless stories, beautifully told." />
+  <meta name="description"
+    content="Between Us — Wedding, lifestyle & engagement photography and videography. Timeless stories, beautifully told." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root{ --bg: #0b0b0c; --fg: #f7f7f7; --muted: #b8b8b8; --brand: #f59e0b; --brand-2: #f43f5e; }
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    .brand-gradient{background-image:linear-gradient(135deg,var(--brand),var(--brand-2));}
-    .glass{backdrop-filter: blur(12px); background: rgba(255,255,255,0.06)}
-    .text-gradient{background:linear-gradient(135deg,#fff,var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .masonry{column-count:1;column-gap:1rem}
-    @media(min-width:640px){.masonry{column-count:2}}
-    @media(min-width:1024px){.masonry{column-count:3}}
-    .masonry-item{break-inside:avoid;margin-bottom:1rem}
+    :root {
+      --bg: #0b0b0c;
+      --fg: #f7f7f7;
+      --muted: #b8b8b8;
+      --brand: #f59e0b;
+      --brand-2: #f43f5e;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial
+    }
+
+    .brand-gradient {
+      background-image: linear-gradient(135deg, var(--brand), var(--brand-2));
+    }
+
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.06)
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #fff, var(--brand-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .masonry {
+      column-count: 1;
+      column-gap: 1rem
+    }
+
+    @media(min-width:640px) {
+      .masonry {
+        column-count: 2
+      }
+    }
+
+    @media(min-width:1024px) {
+      .masonry {
+        column-count: 3
+      }
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem
+    }
   </style>
 </head>
+
 <body class="antialiased">
   <!-- Top Bar 
   <div class="hidden sm:block bg-black/40 text-white/70 text-xs">
@@ -53,17 +103,22 @@
             </div>
           </a>
           <nav class="hidden md:flex items-center gap-6 text-sm">
-            <a class="hover:text-white/90 text-white/70" href="#about">About</a>
-            <a class="hover:text-white/90 text-white/70" href="#portfolio">Portfolio</a>
+            <a class="hover:text-white/90 text-white/70" href="about.html">About</a>
+            <a class="hover:text-white/90 text-white/70" href="portfolio.html">Portfolio</a>
             <a class="hover:text-white/90 text-white/70" href="#reviews">Reviews</a>
-            <a class="hover:text-white/90 text-white/70" href="#insights">Insights</a>
-            <a class="hover:text-white/90 text-white/70" href="#contact">Contact</a>
+            <!--<a class="hover:text-white/90 text-white/70" href="#insights">Insights</a>-->
+            <a class="hover:text-white/90 text-white/70" href="contact.html">Contact</a>
             <!--class="rounded-full brand-gradient px-4 py-2 text-sm font-medium text-white hover:bg-white/10 transition"-->
-            <a href="#reserve"  class="ml-2 inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-medium hover:bg-white/10 transition>Reserve Now">Reserve Now</a>
+            <a href="#reserve"
+              class="ml-2 inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-medium hover:bg-white/10 transition>Reserve Now">Reserve
+              Now</a>
           </nav>
-          <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 px-3 py-2">
+          <button id="mobileMenuBtn"
+            class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 px-3 py-2">
             <span class="sr-only">Open menu</span>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-white/90"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h18M3 12h18M3 18h18"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-white/90">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
           </button>
         </div>
         <!-- Mobile menu -->
@@ -74,7 +129,9 @@
             <a class="block py-2 text-white/80" href="#reviews">Reviews</a>
             <a class="block py-2 text-white/80" href="#insights">Insights</a>
             <a class="block py-2 text-white/80" href="#contact">Contact</a>
-            <a href="#reserve" class="mt-2 inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-2 text-xs font-medium hover:bg-white/10 transition">Reserve Now</a>
+            <a href="#reserve"
+              class="mt-2 inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-2 text-xs font-medium hover:bg-white/10 transition">Reserve
+              Now</a>
           </div>
         </div>
       </div>
@@ -84,20 +141,26 @@
   <!-- Hero -->
   <section id="home" class="relative pt-40">
     <div class="absolute inset-0 -z-10">
-      <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=2000&auto=format&fit=crop" alt="Wedding couple in warm sunset" class="w-full h-full object-cover opacity-60"/>
+      <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=2000&auto=format&fit=crop"
+        alt="Wedding couple in warm sunset" class="w-full h-full object-cover opacity-60" />
       <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black"></div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
-        <p class="text-white/80 tracking-widest text-xs uppercase">Weddings • Engagements • Concept Shoots • Casual Shoots</p>
+        <p class="text-white/80 tracking-widest text-xs uppercase">Weddings • Engagements • Concept Shoots • Casual
+          Shoots</p>
         <h1 class="mt-3 text-4xl sm:text-6xl font-serif leading-tight" style="font-family:'Playfair Display',serif">
           Celebrate Your Love with <span class="text-gradient">Stunning Photography</span>
         </h1>
-        <p class="mt-5 text-white/80 max-w-xl">We capture weddings, engagements and casual sessions with an editorial touch — blending Sri Lankan tradition with modern storytelling.</p>
+        <p class="mt-5 text-white/80 max-w-xl">We capture weddings, engagements and casual sessions with an editorial
+          touch — blending Sri Lankan tradition with modern storytelling.</p>
         <div class="mt-7 flex flex-wrap items-center gap-3">
-          <a href="#portfolio" class="rounded-full brand-gradient px-5 py-3 text-sm font-semibold text-black">Our Portfolio</a>
-          <a href="#reserve" class="rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white/90 hover:bg-white/10">Reserve Now</a>
+          <a href="portfolio.html" class="rounded-full brand-gradient px-5 py-3 text-sm font-semibold text-black">Our
+            Portfolio</a>
+          <a href="#reserve"
+            class="rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white/90 hover:bg-white/10">Reserve
+            Now</a>
         </div>
       </div>
     </div>
@@ -107,12 +170,17 @@
   <section id="about" class="py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid gap-8 lg:grid-cols-2 lg:items-center">
       <div>
-        <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Photography Inspired by Sri Lankan Beauty & Tradition</h2>
-        <p class="mt-3 text-white/80">Between Us is devoted to crafting timeless images and films that honor culture, place and people. From golden beaches to misty hills and heritage venues, we know how to make your story feel like home.</p>
-        <a href="#insights" class="mt-6 inline-flex items-center rounded-full border border-white/20 px-5 py-3 text-sm hover:bg-white/10">Read Insights</a>
+        <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Photography Inspired by
+          Sri Lankan Beauty & Tradition</h2>
+        <p class="mt-3 text-white/80">Between Us is devoted to crafting timeless images and films that honor culture,
+          place and people. From golden beaches to misty hills and heritage venues, we know how to make your story feel
+          like home.</p>
+        <a href="#insights"
+          class="mt-6 inline-flex items-center rounded-full border border-white/20 px-5 py-3 text-sm hover:bg-white/10">Read
+          Insights</a>
       </div>
       <div class="grid grid-cols-1 gap-1">
-        <img class="h-300 w-full rounded-2xl object-cover" src="EWF00001-Edit.jpg" alt="Nawoda & Supun"/>
+        <img class="h-300 w-full rounded-2xl object-cover" src="EWF00001-Edit.jpg" alt="Nawoda & Supun" />
       </div>
     </div>
   </section>
@@ -137,7 +205,8 @@
         </div>
         <div class="rounded-2xl border border-white/10 p-6 hover:bg-white/5 transition">
           <h3 class="text-xl font-semibold">Cinemotography</h3>
-          <p class="mt-2 text-white/70">We capture and immortalize your precious memories on videos by using young, idiosyncratic and professional wedding videographers.</p>
+          <p class="mt-2 text-white/70">We capture and immortalize your precious memories on videos by using young,
+            idiosyncratic and professional wedding videographers.</p>
         </div>
       </div>
     </div>
@@ -148,29 +217,38 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between gap-6">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Story Through Our Lens</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Story Through Our
+            Lens</h2>
           <p class="mt-2 text-white/70">A few favorite weddings, engagements & casual sessions.</p>
         </div>
-        <a href="#contact" class="hidden md:inline-flex items-center rounded-full border border-white/20 px-5 py-2 text-sm hover:bg-white/10">View More</a>
+        <a href="contact us.html"
+          class="hidden md:inline-flex items-center rounded-full border border-white/20 px-5 py-2 text-sm hover:bg-white/10">View
+          More</a>
       </div>
 
       <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <article class="rounded-2xl overflow-hidden border border-white/10 group">
-          <img class="h-56 w-full object-cover group-hover:opacity-90 transition" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop" alt="Wedding cover"/>
+          <img class="h-56 w-full object-cover group-hover:opacity-90 transition"
+            src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop"
+            alt="Wedding cover" />
           <div class="p-5">
             <p class="text-xs text-white/60">Wedding Photography</p>
             <h3 class="mt-1 text-lg font-semibold">Sabrina & Hafshan</h3>
           </div>
         </article>
         <article class="rounded-2xl overflow-hidden border border-white/10 group">
-          <img class="h-56 w-full object-cover group-hover:opacity-90 transition" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Casual"/>
+          <img class="h-56 w-full object-cover group-hover:opacity-90 transition"
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop"
+            alt="Casual" />
           <div class="p-5">
             <p class="text-xs text-white/60">Casual Shoot</p>
             <h3 class="mt-1 text-lg font-semibold">Hasini & Oshadha</h3>
           </div>
         </article>
         <article class="rounded-2xl overflow-hidden border border-white/10 group">
-          <img class="h-56 w-full object-cover group-hover:opacity-90 transition" src="https://images.unsplash.com/photo-1503152394-c571994fd383?q=80&w=1200&auto=format&fit=crop" alt="Beach"/>
+          <img class="h-56 w-full object-cover group-hover:opacity-90 transition"
+            src="https://images.unsplash.com/photo-1503152394-c571994fd383?q=80&w=1200&auto=format&fit=crop"
+            alt="Beach" />
           <div class="p-5">
             <p class="text-xs text-white/60">Engagements</p>
             <h3 class="mt-1 text-lg font-semibold">Tashi & Himesh</h3>
@@ -178,7 +256,9 @@
         </article>
       </div>
       <div class="mt-8 text-center md:hidden">
-        <a href="#contact" class="inline-flex items-center rounded-full border border-white/20 px-5 py-2 text-sm hover:bg-white/10">View More</a>
+        <a href="contact us.html"
+          class="inline-flex items-center rounded-full border border-white/20 px-5 py-2 text-sm hover:bg-white/10">View
+          More</a>
       </div>
     </div>
   </section>
@@ -187,7 +267,8 @@
   <section id="reviews" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
-        <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Weddings Testimonials</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Weddings Testimonials
+        </h2>
         <div class="hidden sm:flex items-center gap-3 text-xs">
           <button id="playBtn" class="rounded-full border border-white/20 px-3 py-1">Start autoplay</button>
           <button id="pauseBtn" class="rounded-full border border-white/20 px-3 py-1">Pause autoplay</button>
@@ -196,29 +277,39 @@
       <div class="mt-6 overflow-hidden">
         <div id="carousel" class="flex gap-6 transition-transform duration-500">
           <figure class="shrink-0 basis-full sm:basis-[48%] lg:basis-[31%] rounded-2xl border border-white/10 p-6">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="Reviewer" class="h-12 w-12 rounded-full object-cover"/>
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop"
+              alt="Reviewer" class="h-12 w-12 rounded-full object-cover" />
             <figcaption class="mt-3 font-medium">Dilthi Fernando</figcaption>
-            <blockquote class="mt-2 text-white/80 text-sm">“Between Us is one of the most dedicated teams in Sri Lanka. Unique style, perfect edits — we’re in love with our album!”</blockquote>
+            <blockquote class="mt-2 text-white/80 text-sm">“Between Us is one of the most dedicated teams in Sri Lanka.
+              Unique style, perfect edits — we’re in love with our album!”</blockquote>
           </figure>
           <figure class="shrink-0 basis-full sm:basis-[48%] lg:basis-[31%] rounded-2xl border border-white/10 p-6">
-            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300&auto=format&fit=crop" alt="Reviewer" class="h-12 w-12 rounded-full object-cover"/>
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300&auto=format&fit=crop"
+              alt="Reviewer" class="h-12 w-12 rounded-full object-cover" />
             <figcaption class="mt-3 font-medium">Imalsha & Shanaka</figcaption>
-            <blockquote class="mt-2 text-white/80 text-sm">“We’d never done a professional shoot before — they made it easy, natural, and the results are stunning.”</blockquote>
+            <blockquote class="mt-2 text-white/80 text-sm">“We’d never done a professional shoot before — they made it
+              easy, natural, and the results are stunning.”</blockquote>
           </figure>
           <figure class="shrink-0 basis-full sm:basis-[48%] lg:basis-[31%] rounded-2xl border border-white/10 p-6">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop" alt="Reviewer" class="h-12 w-12 rounded-full object-cover"/>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop"
+              alt="Reviewer" class="h-12 w-12 rounded-full object-cover" />
             <figcaption class="mt-3 font-medium">Sonali Liyanage</figcaption>
-            <blockquote class="mt-2 text-white/80 text-sm">“Professional, personable and timely. Every emotion of our day was captured beautifully.”</blockquote>
+            <blockquote class="mt-2 text-white/80 text-sm">“Professional, personable and timely. Every emotion of our
+              day was captured beautifully.”</blockquote>
           </figure>
           <figure class="shrink-0 basis-full sm:basis-[48%] lg:basis-[31%] rounded-2xl border border-white/10 p-6">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop" alt="Reviewer" class="h-12 w-12 rounded-full object-cover"/>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop"
+              alt="Reviewer" class="h-12 w-12 rounded-full object-cover" />
             <figcaption class="mt-3 font-medium">Sonali Liyanage</figcaption>
-            <blockquote class="mt-2 text-white/80 text-sm">“Professional, personable and timely. Every emotion of our day was captured beautifully.”</blockquote>
+            <blockquote class="mt-2 text-white/80 text-sm">“Professional, personable and timely. Every emotion of our
+              day was captured beautifully.”</blockquote>
           </figure>
           <figure class="shrink-0 basis-full sm:basis-[48%] lg:basis-[31%] rounded-2xl border border-white/10 p-6">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop" alt="Reviewer" class="h-12 w-12 rounded-full object-cover"/>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop"
+              alt="Reviewer" class="h-12 w-12 rounded-full object-cover" />
             <figcaption class="mt-3 font-medium">Sonali Liyanage</figcaption>
-            <blockquote class="mt-2 text-white/80 text-sm">“Professional, personable and timely. Every emotion of our day was captured beautifully.”</blockquote>
+            <blockquote class="mt-2 text-white/80 text-sm">“Professional, personable and timely. Every emotion of our
+              day was captured beautifully.”</blockquote>
           </figure>
         </div>
       </div>
@@ -259,90 +350,59 @@
   <section id="reserve" class="py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl border border-white/10 p-8 sm:p-12 text-center bg-white/5">
-        <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Let Us Capture Your Wedding Journey</h2>
-        <p class="mt-2 text-white/70">Tell us about your <strong>Date and Venue</strong> - we’ll respond within 24 hours.</p>
+        <h2 class="text-3xl sm:text-4xl font-serif" style="font-family:'Playfair Display',serif">Let Us Capture Your
+          Wedding Journey</h2>
+        <p class="mt-2 text-white/70">Tell us about your <strong>Date and Venue</strong> - we’ll respond within 24
+          hours.</p>
         <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <a href="#contact" class="rounded-full brand-gradient px-6 py-3 text-sm font-semibold text-black">Get in Touch</a>
+          <a href="#contact" class="rounded-full brand-gradient px-6 py-3 text-sm font-semibold text-black">Get in
+            Touch</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
+
   <section id="contact" class="py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 lg:items-start">
-      <div class="rounded-3xl border border-white/10 p-8">
-        <h3 class="text-2xl font-serif" style="font-family:'Playfair Display',serif">Send an Inquiry</h3>
 
-        <!-- FORM WITH FORMSPREE (progressive enhancement: action/method + JS fetch) -->
-        <form id="contactForm" class="mt-6 grid gap-4" novalidate
-              action="https://formspree.io/f/mpwkaoze" method="POST">
-          <!-- Formspree helpers -->
-          <input type="hidden" name="_subject" value="New Inquiry — Between Us" />
-          <input type="hidden" name="_template" value="table" />
-          <!-- Honeypot (spam trap) -->
-          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" />
+    <div class="rounded-3xl border border-white/10 p-8">
+      <h3 class="text-2xl font-serif" style="font-family:'Playfair Display',serif">Contact Details</h3>
+      <ul class="mt-4 grid gap-2 text-white/80 text-sm">
+        <li><strong>Phone:</strong> <a class="underline underline-offset-4" href="tel:+94761071584">+94 76 107 1584</a>
+          or <a class="underline underline-offset-4" href="tel:+94715563837">+94 71 556 3837</a></li>
+        <li><strong>WhatsApp:</strong> <a class="underline underline-offset-4" href="https://wa.me/94761071584">+94 76
+            107 1584</a> or <a class="underline underline-offset-4" href="https://wa.me/94719079007">+94 71 907 9007</a>
+        </li>
+        </li>
+        <li><strong>Email:</strong> <a class="underline underline-offset-4"
+            href="mailto:info@betweenuslk.com">info@betweenuslk.com</a></li>
+        <li><strong>Location:</strong> Colombo, Sri Lanka</li>
 
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label class="text-sm text-white/70">Your Name</label>
-              <input required name="name" class="mt-2 w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Jane & Alex"/>
-            </div>
-            <div>
-              <label class="text-sm text-white/70">Email</label>
-              <input required type="email" name="email" class="mt-2 w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="you@example.com"/>
-            </div>
-          </div>
+         <h4 class="font-semibold">Between Us</h4>
+      <ul class="mt-3 grid gap-2 text-sm text-white/70">
+        <li><a href="#home" class="hover:text-white/90">Home</a></li>
+        <li><a href="#about" class="hover:text-white/90">About</a></li>
+        <li><a href="#portfolio" class="hover:text-white/90">Portfolio</a></li>
+      </ul>
+    
+      <h4 class="font-semibold">Useful Links</h4>
+      <ul class="mt-3 grid gap-2 text-sm text-white/70">
+        <li><a href="#contact" class="hover:text-white/90">Contact</a></li>
+        <li><a href="#reserve" class="hover:text-white/90">Reserve Now</a></li>
+        <li><a href="#faq" class="hover:text-white/90">FAQ</a></li>
+      </ul>
+      </ul>
 
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label class="text-sm text-white/70">Event Date</label>
-              <input type="date" name="date" class="mt-2 w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20"/>
-            </div>
-            <div>
-              <label class="text-sm text-white/70">Location / Venue</label>
-              <input name="venue" class="mt-2 w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Colombo, Sri Lanka"/>
-            </div>
-          </div>
-
-          <div>
-            <label class="text-sm text-white/70">What are you looking for?</label>
-            <select name="service" class="mt-2 w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20">
-              <option>Photography</option>
-              <option>Videography</option>
-              <option>Photography + Videography</option>
-              <option>Engagement<option>
-              <option>Concept Shoot</option>
-              <option>Casual Shoot</option>
-            </select>
-          </div>
-
-          <div>
-            <label class="text-sm text-white/70">Tell us more</label>
-            <textarea name="message" rows="4" class="mt-2 w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Share your plans, timeline, and anything you love."></textarea>
-          </div>
-
-          <div class="flex flex-wrap items-center gap-3">
-            <button type="submit" class="rounded-full brand-gradient px-6 py-3 text-sm font-semibold text-black">Send Inquiry</button>
-            <a class="text-sm text-white/70">or email:</a><a href="mailto:info@betweenuslk.com" class="text-sm text-white/70 underline underline-offset-4">info@betweenuslk.com</a>
-          </div>
-          <p id="formMsg" class="hidden text-sm text-white/70">Thanks! We’ll be in touch shortly.</p>
-        </form>
-      </div>
-
-      <div class="rounded-3xl border border-white/10 p-8">
-        <h3 class="text-2xl font-serif" style="font-family:'Playfair Display',serif">Contact Details</h3>
-        <ul class="mt-4 grid gap-2 text-white/80 text-sm">
-          <li><strong>Phone:</strong> <a class="underline underline-offset-4" href="tel:+94761071584">+94 76 107 1584</a> or <a class="underline underline-offset-4" href="tel:+94715563837">+94 71 556 3837</a></li>
-          <li><strong>WhatsApp:</strong> <a class="underline underline-offset-4" href="https://wa.me/94761071584">+94 76 107 1584</a> or <a class="underline underline-offset-4" href="https://wa.me/94719079007">+94 71 907 9007</a></li></li>
-          <li><strong>Email:</strong> <a class="underline underline-offset-4" href="mailto:info@betweenuslk.com">info@betweenuslk.com</a></li>
-          <li><strong>Studio:</strong> No.30/5/1, Polhena Road, Keselwathugoda, Yakkala, 11870</li>
-        </ul>
-        <div class="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-white/10">
+      
+     
+  
+      <!--<div class="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-white/10">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d488.27284650924673!2d80.0260266517538!3d7.092229909170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slk!4v1762674667023!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+        </div>-->
     </div>
+
+    
   </section>
 
   <footer class="border-t border-white/10 py-10">
@@ -350,26 +410,11 @@
       <div class="grid gap-8 md:grid-cols-4">
         <div>
           <div class="flex items-center gap-3">
-            <img src="Between Us Logo_White.png" alt="Between Us LK logo" style="width:120px">
+            <!--<img src="Between Us Logo_White.png" alt="Between Us LK logo" style="width:120px">-->
           </div>
           <p class="mt-3 text-white/60 text-sm">© <span id="year"></span> Between Us. All rights reserved.</p>
         </div>
-        <div>
-          <h4 class="font-semibold">Between Us</h4>
-          <ul class="mt-3 grid gap-2 text-sm text-white/70">
-            <li><a href="#home" class="hover:text-white/90">Home</a></li>
-            <li><a href="#about" class="hover:text-white/90">About</a></li>
-            <li><a href="#portfolio" class="hover:text-white/90">Portfolio</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold">Useful Links</h4>
-          <ul class="mt-3 grid gap-2 text-sm text-white/70">
-            <li><a href="#contact" class="hover:text-white/90">Contact</a></li>
-            <li><a href="#reserve" class="hover:text-white/90">Reserve Now</a></li>
-            <li><a href="#faq" class="hover:text-white/90">FAQ</a></li>
-          </ul>
-        </div>
+
       </div>
     </div>
   </footer>
@@ -381,24 +426,24 @@
     // Mobile menu toggle
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    mobileBtn?.addEventListener('click', ()=>{ mobileMenu.classList.toggle('hidden'); });
+    mobileBtn?.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
 
     // Simple autoplay carousel
     const carousel = document.getElementById('carousel');
     let index = 0; let playing = true; let itemWidth = 0;
-    function updateWidth(){
+    function updateWidth() {
       const first = carousel?.querySelector('figure');
-      if(!first) return; itemWidth = first.getBoundingClientRect().width + 24; // gap
+      if (!first) return; itemWidth = first.getBoundingClientRect().width + 24; // gap
     }
-    function play(){ playing = true; }
-    function pause(){ playing = false; }
+    function play() { playing = true; }
+    function pause() { playing = false; }
     document.getElementById('playBtn')?.addEventListener('click', play);
     document.getElementById('pauseBtn')?.addEventListener('click', pause);
     document.getElementById('playBtnSm')?.addEventListener('click', play);
     document.getElementById('pauseBtnSm')?.addEventListener('click', pause);
     window.addEventListener('resize', updateWidth); updateWidth();
-    setInterval(()=>{
-      if(!playing || !carousel) return; index = (index + 1) % 3; // 3 items
+    setInterval(() => {
+      if (!playing || !carousel) return; index = (index + 1) % 3; // 3 items
       carousel.style.transform = `translateX(-${index * itemWidth}px)`;
     }, 3500);
 
@@ -407,7 +452,7 @@
     const formMsg = document.getElementById('formMsg');
     const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mpwkaoze'; // your endpoint
 
-    form?.addEventListener('submit', async (e)=>{
+    form?.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
       btn.disabled = true; btn.textContent = 'Sending…';
@@ -419,7 +464,7 @@
           body: data,
           headers: { 'Accept': 'application/json' }
         });
-        if(!res.ok) throw new Error('Network response was not ok');
+        if (!res.ok) throw new Error('Network response was not ok');
 
         form.reset();
         formMsg.classList.remove('hidden');
@@ -433,4 +478,5 @@
     });
   </script>
 </body>
+
 </html>
