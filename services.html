@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — Between Us</title>
+  <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#0b0b0c; --fg:#f7f7f7 }
+    body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .glass{backdrop-filter: blur(12px); background: rgba(255,255,255,0.06)}
+  </style>
+</head>
+<body class="antialiased">
+  <header class="fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 rounded-2xl glass border border-white/10 shadow-lg">
+        <div class="flex items-center justify-between px-4 py-3">
+          <a href="index.html"><img src="Between Us Logo_White.png" alt="" style="width:120px"></a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a class="hover:text-white/90 text-white/70" href="about.html">About</a>
+            <a class="text-white" href="services.html">Services</a>
+            <a class="hover:text-white/90 text-white/70" href="portfolio.html">Portfolio</a>
+            <a class="hover:text-white/90 text-white/70" href="faq.html#faq">FAQ</a>
+            <a class="hover:text-white/90 text-white/70" href="index.html#contact">Contact</a>
+            <a href="index.html#reserve" class="ml-2 inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-medium hover:bg-white/10 transition">Reserve Now</a>
+          </nav>
+          <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 px-3 py-2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 px-4 pb-4">
+          <div class="grid gap-2 py-3 text-sm">
+            <a class="block py-2 text-white/80" href="about.html">About</a>
+            <a class="block py-2 text-white/80" href="services.html">Services</a>
+            <a class="block py-2 text-white/80" href="portfolio.html">Portfolio</a>
+            <a class="block py-2 text-white/80" href="faq.html#faq">FAQ</a>
+            <a class="block py-2 text-white/80" href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-40 pb-16">
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-serif">Our Services</h1>
+      <p class="mt-2 text-white/70">From the first look to forever — choose how we tell your story.</p>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-white/10 p-6 hover:bg-white/5 transition">
+          <h3 class="text-xl font-semibold">Weddings</h3>
+          <p class="mt-2 text-white/70">Full-day photo & optional film with second shooter, sneak peeks within 72h.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 hover:bg-white/5 transition">
+          <h3 class="text-xl font-semibold">Engagements</h3>
+          <p class="mt-2 text-white/70">Creative sessions with location scouting and gentle direction.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 hover:bg-white/5 transition">
+          <h3 class="text-xl font-semibold">Casual Shoots</h3>
+          <p class="mt-2 text-white/70">Candid lifestyle sessions that feel effortless and real.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 hover:bg-white/5 transition">
+          <h3 class="text-xl font-semibold">Cinematography</h3>
+          <p class="mt-2 text-white/70">We immortalize your memories on film with young, idiosyncratic and professional wedding videographers.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="index.html#contact" class="rounded-full border border-white/20 px-6 py-3 text-sm hover:bg-white/10">Request Packages</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top border-white/10 py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <p class="text-white/60 text-sm">© <span id="year"></span> Between Us. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const mobileBtn=document.getElementById('mobileMenuBtn'), mobileMenu=document.getElementById('mobileMenu');
+    mobileBtn?.addEventListener('click',()=>mobileMenu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
